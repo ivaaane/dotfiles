@@ -1,17 +1,17 @@
-# path
-export PATH=${HOME}/bin/:${HOME}/.local/bin:${PATH}
-
-# applications
+# variables
 export EDITOR='nvim'
 export TERMINAL='kitty'
 export BROWSER='firefox'
-
-
-# history limit
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_SCREENSHOTS_DIR="$HOME/downloads"
+export PATH="/bin:/usr/bin:$HOME/.local/bin:$PATH"
+export LC_ALL=en_US.UTF-8
 export HISTSIZE=50
 export HISTFILESIZE=50
 
-# idk
 . "$HOME/.cargo/env"
 [[ $- != *i* ]] && return
 
@@ -22,6 +22,7 @@ alias xclip='xclip -selection clipboard'
 alias ls='eza -T --icons --group-directories-first -I ".git" --git-ignore'
 alias clear='printf "\033[3J\033[H\033[2J"'
 alias discord='vesktop & disown'
+alias yt='ytfzf'
 alias woman='man'
 
 # prompt
