@@ -1,9 +1,9 @@
 " vim-plug
 call plug#begin()
-	Plug 'sheerun/vim-polyglot'
-	Plug 'jiangmiao/auto-pairs'
-	Plug 'junegunn/goyo.vim'
-	Plug 'bluz71/vim-mistfly-statusline'
+Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/goyo.vim'
+Plug 'bluz71/vim-mistfly-statusline'
 call plug#end()
 
 " set options
@@ -27,6 +27,3 @@ highlight! link MistflyInsert DiffChange
 highlight! link MistflyVisual IncSearch
 highlight! link MistflyCommand WildMenu
 highlight! link MistflyReplace ErrorMsg
-
-" LÖVE gamedev
-command! Love w | !love .
