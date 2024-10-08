@@ -12,7 +12,7 @@ workspace_layout default
 ################################
 # Window and Floating Settings #
 ################################
-new_window pixel 1
+default_border pixel 1
 gaps inner 6
 gaps outer 10
 floating_modifier $mod
